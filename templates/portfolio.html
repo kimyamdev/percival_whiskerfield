@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Positions Overview</title>
+    <!-- Optional: Include Bootstrap for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Currency</th>
+                <th>Position</th>
+                <th>Average Cost</th>
+                <th>Latest Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row['symbol'] }}</td>
+                <td>{{ row['currency'] }}</td>
+                <td>{{ row['position'] }}</td>
+                <td>{{ row['averageCost'] }}</td>
+                <td>{{ row['latestPrice'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+
+{% endblock %}
