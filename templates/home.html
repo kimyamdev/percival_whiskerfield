@@ -1,5 +1,107 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>HOME</h1>
+<style>
+    /* Global Styling */
+    body {
+        /* font-family: 'Courier New', monospace; Typewriter-esque for a classic, vintage feel */
+        margin: 20px;
+        color: #333; /* A rich, deep color for text contrasts well with the monospaced font */
+    }
+
+    /* Image Styling */
+    img.resize-image {
+        width: 50%; /* Responsive sizing */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centering */
+    }
+
+    /* Heading Styling */
+    h2, h5 {
+        /* color: #007BFF; A vibrant blue for headings */
+        /* font-family: 'Courier New', monospace; Consistency with the body's typewriter theme */
+    }
+
+    /* List Styling */
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px; /* Enhanced readability between list items */
+    }
+
+    /* Image Container for Gallery */
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Adaptivity and responsiveness */
+        gap: 15px; /* Spacing between images */
+    }
+
+    .image-container img {
+        max-width: 30%; /* Fine-tuned for optimal display */
+        height: auto;
+        border-radius: 5px; /* Aesthetic touch with rounded corners */
+    }
+</style>
+
+<body>
+    <br>
+    <h1>PERCIVAL W. & Co</h1>
+    <br>
+    <h2>Might you wish to peek at some of the portraits of our firm's illustrious members.</h2>
+    <br>
+    <div class="image-container">
+        {% for image_path in image_paths %}
+            <img src="{{ image_path }}" alt="Random Image">
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="d-flex justify-content-center">
+        <!-- Stylish Bootstrap button -->
+        <button id="refreshImages" class="btn btn-dark">Browse Our Gallery</button>
+    </div>
+
+
+    <br><br>
+    <p>We have embarked on a rather intriguing venture, a delightful concoction of experimental portfolio management and the alchemy of software development—a blend of traditional programming + the wizardry of LLMs.</p>
+    <br>
+    <h2>Objectives, you ask? Permit us to elucidate:</h2>
+    <br>
+    <ul>
+        <li>To harness the magic of technology, automating the mundane to reserve our energies for the pursuits that spark joy and provoke thought.</li>
+        <li>To embark on a journey of introspection through our financial escapades, refining our investment philosophy with each stumble and triumph.</li>
+        <li>To construct a bastion for structured inquiry, a sanctuary where our thoughts can roam free and unencumbered.</li>
+        <li>To engage in a cyclical process of iteration and enhancement, all in the quest for a performance most sublime.</li>
+        <li>To cast our discoveries into the world, a beacon for those intrepid souls eager to glean wisdom from our financial odyssey.</li>
+        <li>To amass wealth, not merely as an end, but as a means to sustain our existence, indulge in life's pleasures, and to endow projects that stir the very depths of our souls.</li>
+    </ul>
+    <hr>
+
+    <p>This, dear reader, is the essence of our quest, a blend of ambition and intellect, driven by a ceaseless thirst for knowledge and a penchant for technological elegance.</p>
+</body>
+
+<script>
+    document.getElementById("refreshImages").addEventListener("click", function() {
+        fetch('/get-new-images')
+            .then(response => response.json())
+            .then(data => {
+                const imageContainer = document.querySelector('.image-container');
+                imageContainer.innerHTML = ''; // Clear existing images
+                data.forEach(imagePath => {
+                    const img = document.createElement('img');
+                    img.src = imagePath;
+                    img.alt = "Random Image";
+                    img.style.maxWidth = "30%";
+                    img.style.height = "auto";
+                    img.style.borderRadius = "5px";
+                    imageContainer.appendChild(img);
+                });
+            });
+    });
+    </script>
+
 {% endblock %}

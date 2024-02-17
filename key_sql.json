@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "family-office-sheet",
+  "private_key_id": "00dcae89ae2f04726bb7b02b0614950434b06911",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCOW6/yh7Gt4nuB\nOiz/OMhjYU7cs8y3FTqIOkbxhyLKuO4zbt2uUGvy3L3/sd4l/aFFz4b6z1/5oQod\nFIP2C/aBlHPq98QKah8a98tf8zqn/a97AgCG+h5cUoyMtNDWHf0cpOM5ZiIIVsmx\nRHSijkspCYtIAcUkvd7XfJ4DmY7OMTrzqz8HdthU+fF+ou+5mxey6WtuB2wrK1e4\n4LpDoirsQMhgLK+K/qaqXQSyyHd3w4RjgBCojF2mDHuvZRJiKW2JSavdviYIBssi\n7uztZL09TNxBmFoImm5YWqoodCKlyet8R+glKYLIOzaMv2TCqYbOz/CxJBIjmvXG\nT9F6OPujAgMBAAECggEAHbGWQ7p2H1UMeeoOlLXdZo1Xi8WdP9sXuG6feaW8Zhio\n5uWLK97uhVvx7bHGKpp61zrwZsR2unUSzPoIhHv+UQ0MGMjRhXKZRmDFdSAg7gWG\nYtwKDB2D07IMSxU0MlVTBHSISOK62o5vx6AFzBpuJwMsoDpuSrmoD76Ynxuao/tl\nLLSQnJ/uJ0vVEeYKvrlOEVzStf2fwBo0jz5gGAyOhK8CTXzo4Z8VJy5+fACDbOTf\nb03bAmVeWSVuhiz+qDZfjeGPvcRBGpUMtWX4wjN+inqVCTPgQKRFG8wAz5OY9uWc\nzlXAizHtLNWhJ4q1++z6P8XS0xRFAo98guHLHlwjwQKBgQDDnc4CPBVTAy9yx+BB\nv42I6vmILM9lrd0ogrXZl5BGg16runBX3ThXONhTakwwMw7x2Ykxgtkz7vhYNMFS\nYdWf87u1JC1ZsEL7B0mvz7J3nAIbnUEnsb2rpvn6hoersCHHh5bccQivsq/JlUip\n+og5d5KwwJuMP1mV5XI+OTnH0QKBgQC6TUEtpAGfjU5dWOEUlk+v6mDZM6d06OmR\n4GEy4FgIkTr48bUui0eptAsydCNyk52ug5Ks9C2f367n5YsNUl7RqXWWjgs4Ts95\nd8UvLgWOcRE7WKDhIPSyz56y77VlklE28jWK4XBocATj3K++cLsyzyEJFvDedJhJ\nLJel5zudMwKBgCLSKmO3ckxOmtmhvse1Y2pl+XlGEL0Wz/FwIxLSqfoDVIzZKTpa\nxLayBcADggBqdlSS1psbobJe7ZI2Adu6Up6gcl9ySyhV+fZZe8JyBGDKQo3L1ldM\nimjN1l3EKM5lEf5EopQnAtbTxfrqOf8X+7vPDyurfYTfmgDW0RlGcoShAoGAeTz3\nMpVtfQB/Q94oM7aRyyBSwGaODlXYUldbybkXcRPZ9dGOH+kBzN1fAAl2XATWc5Aq\nLqWE32q4ry7BK/0zuWt3G2/6uz0GZbzctJRVh1nrZdyKbZd9xrO4SigWuy/Z7FD5\nKRUGiuCDPioKsHs6R5llnT2xqILl65C6a3usXuMCgYEAhm+I+T/t1fyTiEM3anxD\nZ14dBwza43OHN7k9ANlw4zLi6laODoUFT8hylYOFYjOO7TohrOJs2P7cSgVAztKC\nScrE10uuWxSsTcPmEY9Gl5Anfwp4JMkaTVe3Qlh8fJ+tt7PanlcdiG+ITBccioou\nY7ClAxqacfyowm3EVrV427A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-account-family-office@family-office-sheet.iam.gserviceaccount.com",
+  "client_id": "102002067660596444457",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account-family-office%40family-office-sheet.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

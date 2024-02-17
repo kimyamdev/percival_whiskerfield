@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>ABOUT PERCIVAL W.</h1>
+
+<p>Origins:</p>
+
+<ul>
+    <li>On the auspicious day marked by <span id="birth_date">{{ formatted_date }}</span>, in the quaint locale of 2 rue Paul Langevin, 57070 Metz, France, I first graced this world with my presence.</li>
+    <li id="time_since_birth">Seconds amassed in the treasury of my existence: tallying...</li>
+    <li>Main theatres of operation: the illustrious France and the vibrant Singapore.</li>
+    <li>A youth drenched in bliss, cradled by an illustrious family lineage originating in France, Italy and Slovenia as far as it is known.</li>
+    <li>Academic pursuits: A foundation in the sciences (Scientific Baccalauréat), followed by a sojourn through the realms of French Modern Literature (Master's, Metz), a dalliance with Economics (University Degree, Paris), culminating in the strategic echelons of an MBA (Business School, Paris).</li>
+</ul>
+
+<p>Professional Tapestry:</p>
+
+<ul>
+    <li>An initiation in the venerable halls of BNP Paribas in Singapore, juggling the spheres of Wealth Management and Corporate Banking.</li>
+    <li>A stint as a consultant, weaving strategies for Singapore's government agency, enhancing F&B exports to France.</li>
+    <li>An entrepreneurial venture in e-tailoring, though marked by failure, was a crucible of invaluable lessons.</li>
+    <li>Embarking on the path of junior hedge funds sales at Alfi Partners in Paris.</li>
+    <li>Elevating to the orchestration of funds of hedge funds sales, a journey that spanned from HDF Finance in Paris back to the shores of Singapore.</li>
+    <li>A tenure as a Relationship Manager, first with the esteemed Standard Chartered Bank Priority Banking Offshore, then with DBS Treasures Private Client, both in Singapore.</li>
+    <li>Engagements in consultancy with a single family office in Singapore, a testament to my advisory acumen.</li>
+    <li>Co-founding Oasis, a sanctuary of self-care startup in Singapore, marking my foray into entrepreneurial rejuvenation.</li>
+</ul>
+
+<p>Personal Odyssey:</p>
+
+<ul>
+    <li>Once harboured dreams of ecclesiastical eloquence, envisioning a life of sermon and sanctity, a divine broker of sorts.</li>
+    <li>Reflecting upon my chronicle, the pursuit of generating affluence with minimal exertion emerges as a recurring leitmotif.</li>
+    <li>Philosophy's allure beckoned, yet the siren call of literature, pursued in camaraderie, charted my academic course.</li>
+    <li>The millennial crescendo of 1999's internet boom unveiled the economic arena and its financial gladiators, igniting a fervent passion within.</li>
+    <li>A sojourn in an online brokerage in Paris, where fortunes were both made and dissipated, laid bare the enthralling universe of market speculation.</li>
+    <li>This revelation steered my voyage towards the financial sector, where I try to stand as a beacon of market wisdom to those I serve.</li>
+    <li>The advent of "robo-advisory" in 2015, a digital harbinger, reshaped my vision of the industry's future, a future I eagerly embrace.</li>
+    <li>Since that epiphany, I've been an autodidact in the digital magicks of coding, forever in a state of playful experimentation with the automation and digitization of portfolios.</li>
+    <li>My investments traverse the realms of both private and public equities, a testament to my eclectic financial palate.</li>
+</ul>
+
+
+
+<script>
+    function updateTimeSinceBirth() {
+        var birthDateElement = document.getElementById("birth_date");
+        var birthDate = new Date(birthDateElement.innerHTML);
+        var now = new Date();
+        var timeSinceBirth = Math.floor((now - birthDate) / 1000); // Convert milliseconds to seconds
+        
+        // Format the number of seconds with thousand comma separator
+        var formattedSeconds = timeSinceBirth.toLocaleString('en-US');
+        
+        var timeSinceBirthElement = document.getElementById("time_since_birth");
+        timeSinceBirthElement.innerHTML = formattedSeconds + " seconds have been artistically spent since birth.";
+    }
+    
+    // Update the time since birth every second
+    setInterval(updateTimeSinceBirth, 1000);
+</script>
+
+
+
+{% endblock %}

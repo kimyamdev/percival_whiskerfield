@@ -2,38 +2,109 @@
 
 {% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Positions Overview</title>
-    <!-- Optional: Include Bootstrap for styling -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
 <body>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Symbol</th>
-                <th>Currency</th>
-                <th>Position</th>
-                <th>Average Cost</th>
-                <th>Latest Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for row in rows %}
-            <tr>
-                <td>{{ row['symbol'] }}</td>
-                <td>{{ row['currency'] }}</td>
-                <td>{{ row['position'] }}</td>
-                <td>{{ row['averageCost'] }}</td>
-                <td>{{ row['latestPrice'] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-
-
-
-
-
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Geography Exposure</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Total Value</th>
+                            <th>Percentage (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in geography_totals %}
+                        <tr>
+                            <td>{{ row['Category'] }}</td>
+                            <td>{{ "{:,.0f}".format(row['ValueInSGD']) }}</td>
+                            <td>{{ row['Percentage'] }}%</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="col-lg-4">
+                <h2>Sector Exposure</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Super Asset Class</th>
+                            <th>Total Value</th>
+                            <th>Percentage (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in sector_totals %}
+                        <tr>
+                            <td>{{ row['Category'] }}</td>
+                            <td>{{ "{:,.0f}".format(row['ValueInSGD']) }}</td>
+                            <td>{{ row['Percentage'] }}%</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="col-lg-4">
+                <h2>Thematic Exposure</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Custom Class</th>
+                            <th>Total Value</th>
+                            <th>Percentage (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in theme_totals %}
+                        <tr>
+                            <td>{{ row['Category'] }}</td>
+                            <td>{{ "{:,.0f}".format(row['ValueInSGD']) }}</td>
+                            <td>{{ row['Percentage'] }}%</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <h2 class="pt-4">Positions</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Asset Name</th>
+                    <th>Currency</th>
+                    <th>Position</th>
+                    <th>Average Cost</th>
+                    <th>Latest Price</th>
+                    <th>Amount in SGD</th>
+                    <th>Weight</th>
+                    <th>TP 5y</th>
+                    <th>Latest Deck</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                <tr>
+                    <td>{{ row['Asset_Name'] }}</td>
+                    <td>{{ row['currency'] }}</td>
+                    <td>{{ "{:,.0f}".format(row['position']) }}</td>
+                    <td>{{ "{:,.2f}".format(row['averageCost']) }}</td>
+                    <td>{{ "{:,.2f}".format(row['latestPrice']) }}</td>
+                    <td>{{ "{:,.0f}".format(row['ValueInSGD']) }}</td>
+                    <td>{{ '{:.1f}%'.format(row['Weight']*100) }}</td>
+                    <td>{{ row['Estimated_Price_5y'] }}</td>
+                    <td><a href="{{ row['Link_to_deck'] }}" target="_blank" rel="noopener noreferrer">Here</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
 {% endblock %}
+

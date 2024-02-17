@@ -1,0 +1,796 @@
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/cloud/bigquery/table.py:2257: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+<google.oauth2.service_account.Credentials object at 0x12a7e7c90>
+<google.cloud.bigquery.client.Client object at 0x12a965a90>
+True
+<google.oauth2.service_account.Credentials object at 0x102c96690>
+START ASYNC
+Test FX USD: 1.3608247422680413
+Index(['SEC_Code', 'IB_Ticker', 'exchange_x', 'Asset_Name',
+       'Super_Asset_Class', 'Custom_Class', 'Geography', 'Sector', 'Theme',
+       'Coupon', 'Estimated_yield_5y', 'Estimated_Price_5y', 'Mini_Desc',
+       'Mini_Thesis', 'Value', 'Quality', 'Momentum', 'Link_to_deck',
+       'account', 'exchange_y', 'currency', 'position', 'averageCost',
+       'latestPrice', 'Position_Amount', 'ValueInSGD', 'Weight'],
+      dtype='object')
+Dataframe appended to family-office-sheet.Consolidated.Positions successfully.
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/cloud/bigquery/table.py:2257: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+<google.oauth2.service_account.Credentials object at 0x13e3fc2d0>
+<google.cloud.bigquery.client.Client object at 0x13e569450>
+True
+<google.oauth2.service_account.Credentials object at 0x104bbe6d0>
+START ASYNC
+Test FX USD: 1.3608247422680413
+Index(['SEC_Code', 'IB_Ticker', 'exchange_x', 'Asset_Name',
+       'Super_Asset_Class', 'Custom_Class', 'Geography', 'Sector', 'Theme',
+       'Coupon', 'Estimated_yield_5y', 'Estimated_Price_5y', 'Mini_Desc',
+       'Mini_Thesis', 'Value', 'Quality', 'Momentum', 'Link_to_deck',
+       'account', 'exchange_y', 'currency', 'position', 'averageCost',
+       'latestPrice', 'Position_Amount', 'ValueInSGD', 'Weight'],
+      dtype='object')
+Dataframe appended to family-office-sheet.Consolidated.Positions successfully.
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 7, in <module>
+    credentials = service_account.Credentials.from_service_account_file('key_sql.json')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/oauth2/service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'key_sql.json'
+/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/cloud/bigquery/table.py:2257: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+<google.oauth2.service_account.Credentials object at 0x11fce7cd0>
+<google.cloud.bigquery.client.Client object at 0x11ff64f50>
+True
+<google.oauth2.service_account.Credentials object at 0x10294a510>
+START ASYNC
+Test FX USD: 1.3608247422680413
+Index(['SEC_Code', 'IB_Ticker', 'exchange_x', 'Asset_Name',
+       'Super_Asset_Class', 'Custom_Class', 'Geography', 'Sector', 'Theme',
+       'Coupon', 'Estimated_yield_5y', 'Estimated_Price_5y', 'Mini_Desc',
+       'Mini_Thesis', 'Value', 'Quality', 'Momentum', 'Link_to_deck',
+       'account', 'exchange_y', 'currency', 'position', 'averageCost',
+       'latestPrice', 'Position_Amount', 'ValueInSGD', 'Weight'],
+      dtype='object')
+Dataframe appended to family-office-sheet.Consolidated.Positions successfully.
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 8, in <module>
+    print(os.path.exists(path))
+          ^^
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 8, in <module>
+    print(os.path.exists(path))
+          ^^
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 8, in <module>
+    print(os.path.exists(path))
+          ^^
+NameError: name 'os' is not defined
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 3, in <module>
+    from ib_insync_scripts import fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 14, in <module>
+    from BQ_queries import test
+  File "/Users/philippezanetti/percival_whiskerfield/BQ_queries.py", line 8, in <module>
+    print(os.path.exists(path))
+          ^^
+NameError: name 'os' is not defined
+Peer closed connection. clientId 1 already in use?
+Peer closed connection. clientId 1 already in use?
+API connection failed: TimeoutError()
+API connection failed: TimeoutError()
+True
+<google.oauth2.service_account.Credentials object at 0x14bdfc510>
+<google.cloud.bigquery.client.Client object at 0x14f96b3d0>
+True
+<google.oauth2.service_account.Credentials object at 0x1024f2510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+True
+<google.oauth2.service_account.Credentials object at 0x1328d4fd0>
+<google.cloud.bigquery.client.Client object at 0x1328d7310>
+True
+<google.oauth2.service_account.Credentials object at 0x100b0a510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+    return fut.result()
+           ^^^^^^^^^^^^
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 684, in _wrap_awaitable
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 684, in _wrap_awaitable
+    return (yield from awaitable.__await__())
+    return (yield from awaitable.__await__())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+asyncio.exceptions.CancelledError
+
+
+The above exception was the direct cause of the following exception:
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+    return future.result()
+           ^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1748, in connectAsync
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1748, in connectAsync
+    await self.client.connectAsync(host, port, clientId, timeout)
+    await self.client.connectAsync(host, port, clientId, timeout)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/client.py", line 217, in connectAsync
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/client.py", line 217, in connectAsync
+    await asyncio.wait_for(self.apiStart, timeout)
+    await asyncio.wait_for(self.apiStart, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x121668c50>
+<google.cloud.bigquery.client.Client object at 0x12166a950>
+True
+<google.oauth2.service_account.Credentials object at 0x10020a510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x11f3fc810>
+<google.cloud.bigquery.client.Client object at 0x11f567910>
+True
+<google.oauth2.service_account.Credentials object at 0x10423a510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x1442fc250>
+<google.cloud.bigquery.client.Client object at 0x144467590>
+True
+<google.oauth2.service_account.Credentials object at 0x100f16510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x148365c10>
+<google.cloud.bigquery.client.Client object at 0x148365f10>
+True
+<google.oauth2.service_account.Credentials object at 0x1010fa510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x12e965bd0>
+<google.cloud.bigquery.client.Client object at 0x12e965ed0>
+True
+<google.oauth2.service_account.Credentials object at 0x102ce2510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x13160ebd0>
+<google.cloud.bigquery.client.Client object at 0x13176b350>
+True
+<google.oauth2.service_account.Credentials object at 0x102dbe550>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x1285699d0>
+<google.cloud.bigquery.client.Client object at 0x12856bd90>
+True
+<google.oauth2.service_account.Credentials object at 0x104f5a510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x12c6fc450>
+<google.cloud.bigquery.client.Client object at 0x12d16b6d0>
+True
+<google.oauth2.service_account.Credentials object at 0x1051b2510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x157dfc510>
+<google.cloud.bigquery.client.Client object at 0x16806b550>
+True
+<google.oauth2.service_account.Credentials object at 0x1049b2550>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x12b569bd0>
+<google.cloud.bigquery.client.Client object at 0x12b569ed0>
+True
+<google.oauth2.service_account.Credentials object at 0x10309a510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+open orders request timed out
+completed orders request timed out
+True
+<google.oauth2.service_account.Credentials object at 0x1420fc750>
+<google.cloud.bigquery.client.Client object at 0x14226b950>
+True
+<google.oauth2.service_account.Credentials object at 0x106f73d90>
+START ASYNC
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 490, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 50, in fetch_portfolio_df
+    positions_with_prices = await fetch_positions_and_prices()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 21, in fetch_positions_and_prices
+    await ib.connectAsync('127.0.0.1', 7496, clientId=1)
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/ib_insync/ib.py", line 1782, in connectAsync
+    await asyncio.wait_for(self.reqExecutionsAsync(), timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 492, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/cloud/bigquery/table.py:2257: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+True
+<google.oauth2.service_account.Credentials object at 0x12edfc210>
+<google.cloud.bigquery.client.Client object at 0x12efdb390>
+True
+<google.oauth2.service_account.Credentials object at 0x104e02690>
+START ASYNC
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 65, in fetch_portfolio_df
+    print(f"Test FX USD: {fetch_exchange_rate('USD')}")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 63, in fetch_exchange_rate
+    return c.get_rate(currency, 'SGD')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/forex_python/converter.py", line 79, in get_rate
+    raise RatesNotAvailableError("Currency Rates Source Not Ready")
+forex_python.converter.RatesNotAvailableError: Currency Rates Source Not Ready
