@@ -12,7 +12,7 @@ from google.oauth2 import service_account
 
 import os
 
-path = '/Users/philippezanetti/percival_whiskerfield/venv/bin/python3 /Users/philippezanetti/percival_whiskerfield/key_sql.json'
+path = 'key_sql.json'
 print(os.path.exists(path))
 
 credentials = service_account.Credentials.from_service_account_file(path)
