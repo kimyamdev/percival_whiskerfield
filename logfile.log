@@ -794,3 +794,63 @@ Traceback (most recent call last):
   File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/forex_python/converter.py", line 79, in get_rate
     raise RatesNotAvailableError("Currency Rates Source Not Ready")
 forex_python.converter.RatesNotAvailableError: Currency Rates Source Not Ready
+/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/cloud/bigquery/table.py:2257: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+True
+<google.oauth2.service_account.Credentials object at 0x11f4fc050>
+<google.cloud.bigquery.client.Client object at 0x11f7474d0>
+True
+<google.oauth2.service_account.Credentials object at 0x100c26510>
+START ASYNC
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 65, in fetch_portfolio_df
+    print(f"Test FX USD: {fetch_exchange_rate('USD')}")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 63, in fetch_exchange_rate
+    return c.get_rate(currency, 'SGD')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/forex_python/converter.py", line 79, in get_rate
+    raise RatesNotAvailableError("Currency Rates Source Not Ready")
+forex_python.converter.RatesNotAvailableError: Currency Rates Source Not Ready
+/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/google/cloud/bigquery/table.py:2257: UserWarning: A progress bar was requested, but there was an error loading the tqdm library. Please install tqdm to use the progress bar functionality.
+  record_batch = self.to_arrow(
+True
+<google.oauth2.service_account.Credentials object at 0x127fe7b10>
+<google.cloud.bigquery.client.Client object at 0x146967190>
+True
+<google.oauth2.service_account.Credentials object at 0x104586690>
+START ASYNC
+Traceback (most recent call last):
+  File "/Users/philippezanetti/percival_whiskerfield/bigquery_scripts.py", line 35, in <module>
+    df = asyncio.run(fetch_portfolio_df())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 65, in fetch_portfolio_df
+    print(f"Test FX USD: {fetch_exchange_rate('USD')}")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/ib_insync_scripts.py", line 63, in fetch_exchange_rate
+    return c.get_rate(currency, 'SGD')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/philippezanetti/percival_whiskerfield/venv/lib/python3.11/site-packages/forex_python/converter.py", line 79, in get_rate
+    raise RatesNotAvailableError("Currency Rates Source Not Ready")
+forex_python.converter.RatesNotAvailableError: Currency Rates Source Not Ready

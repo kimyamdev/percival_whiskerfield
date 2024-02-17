@@ -11,7 +11,7 @@ import async_timeout
 from flask import Flask, render_template, redirect, url_for, flash
 from ib_insync import *
 import pandas as pd
-from BQ_queries import test
+from BQ_queries import test, latest_portfolio
 from forex_python.converter import CurrencyRates
 from datetime import datetime
 
@@ -52,10 +52,10 @@ async def fetch_portfolio_df():
     positions_df = pd.DataFrame(positions_with_prices)
     # Renaming the column in positions_df to match the df for a seamless merge
     positions_df.rename(columns={'symbol': 'IB_Ticker'}, inplace=True)
-    test_df = test()
+    latest_portfolio_df = latest_portfolio()
 
     # Performing an inner join on the IB_Ticker column
-    merged_df = pd.merge(test_df, positions_df, on='IB_Ticker', how='inner')
+    merged_df = pd.merge(latest_portfolio_df, positions_df, on='IB_Ticker', how='inner')
 
     c = CurrencyRates()
 

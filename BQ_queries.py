@@ -8,21 +8,10 @@ import os
 path = '/Users/philippezanetti/percival_whiskerfield/key_sql.json'
 print(os.path.exists(path))
 
-
-try:
-    credentials = service_account.Credentials.from_service_account_file(path)
-    print(credentials)
-except Exception as e:
-    print(f"An error occurred: {e}")
-
+credentials = service_account.Credentials.from_service_account_file(path)
 bqclient = bigquery.Client(credentials=credentials)
 print(bqclient)
 project_id = 'family-office-sheet'
-
-
-
-
-
 
 def test():
     test = pandas_gbq.read_gbq(
